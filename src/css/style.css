@@ -10,6 +10,74 @@ section {
 
 .containe-crs {
   width: 100%;
-  height: 85vh;
+  height: 65vh;
   background-color: aquamarine;
+}
+
+.container-cards {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(
+    to bottom,
+    aquamarine 10%,
+    aquamarine 10%,
+    yellow 80%
+  );
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+header.transparent {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+header.solid {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.content {
+  padding: 200px 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
 }
