@@ -10,7 +10,7 @@ section {
 
 .containe-crs {
   width: 100%;
-  height: 65vh;
+  height: 75vh;
   background-color: aquamarine;
 }
 
@@ -19,9 +19,8 @@ section {
   height: 50vh;
   background-image: linear-gradient(
     to bottom,
-    aquamarine 10%,
-    aquamarine 0%,
-    yellow 80%
+    aquamarine 30%,
+    rgb(255, 255, 255) 0%
   );
 }
 
