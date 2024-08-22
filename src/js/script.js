@@ -16,3 +16,5 @@ window.addEventListener("load", function () {
   document.querySelector(".title-bg").classList.add("fade-in-up-title");
   document.querySelector(".paragraph-bg").classList.add("fade-in-up-paragraph");
 });
+
+//animate card

@@ -44,29 +44,9 @@ section {
   border-radius: 10px;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(22px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* animate elements */
-.fade-in-up-title {
-  animation: fadeInUp 1s ease-out;
-}
-
-.fade-in-up-paragraph {
-  animation: fadeInUp 1.4s ease-out;
-}
-
 .container-lt {
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   background-image: linear-gradient(
     to bottom,
     #4fbabc59 1%,
