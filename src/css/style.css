@@ -54,6 +54,46 @@ section {
     #4fbabcd3 8%,
     #4fbbbc 81%
   );
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.bg-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-row{
+  width: 300px;
+  height: 120px;
+  /* background-color: pink; */
+  margin: 20px;
+
+}
+
+.titleh2{
+  width: 100%;
+  height: 30px;
+  /* background-color: red; */
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.paragraphcard{
+  width: 90%;
+  height:auto;
+  font-size: 18px;
+  margin: auto;
+  /* background-color: green; */
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
