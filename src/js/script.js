@@ -14,7 +14,5 @@ window.addEventListener("scroll", function () {
 window.addEventListener("load", function () {
   // pull the class and animate the title and paragraph
   document.querySelector(".title-bg").classList.add("fade-in-up-title");
-  document
-    .querySelector(".paragraph-bg")
-    .classList.add("fade-in-up-paragraphs");
+  document.querySelector(".paragraph-bg").classList.add("fade-in-up-paragraph");
 });
