@@ -8,3 +8,13 @@ window.addEventListener("scroll", function () {
     navbar.classList.add("transparent");
   }
 });
+
+//animate
+
+window.addEventListener("load", function () {
+  // pull the class and animate the title and paragraph
+  document.querySelector(".title-bg").classList.add("fade-in-up-title");
+  document
+    .querySelector(".paragraph-bg")
+    .classList.add("fade-in-up-paragraphs");
+});
