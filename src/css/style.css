@@ -42,7 +42,7 @@ section {
 }
 
 .title-bg {
-  width: 50%;
+  width: 60%;
   margin: 10px 0;
   font-size: 38px;
 
@@ -65,7 +65,7 @@ section {
 
 .container-lt {
   width: 100%;
-  height: 55vh;
+  height: 58vh; /*55*/
   background-color: #43dcdf;
   display: flex;
   flex-direction: column;
@@ -119,6 +119,74 @@ section {
   width: 50%;
   height: auto;
 }
+
+.projects-container {
+  width: 100%;
+  height: 80vh;
+  background-color: red;
+}
+
+.projects-bottom {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+  padding: 50px;
+  margin: auto;
+  background-color: green;
+}
+
+.title-container-projects {
+  width: 85%;
+  height: 30px;
+  margin: auto;
+  background-color: blue;
+}
+
+.cards-projects {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.img-projects {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* .projects-container {
+  --r: 56px; 
+  --c1: #43dcdf  99%,#0000 101%;
+  --c2: #ffffff 99%,#0000 101%;
+  
+  --s:calc(var(--r)*.866); 
+  --g0:radial-gradient(var(--r),var(--c1));
+  --g1:radial-gradient(var(--r),var(--c2));
+  --f:radial-gradient(var(--r) at calc(100% + var(--s)) 50%,var(--c1));
+  --p:radial-gradient(var(--r) at 100% 50%,var(--c2));
+  background:
+    var(--f) 0 calc(-5*var(--r)/2),
+    var(--f) calc(-2*var(--s)) calc(var(--r)/2),
+    var(--p) 0 calc(-2*var(--r)),
+    var(--g0) var(--s) calc(-5*var(--r)/2),
+    var(--g1) var(--s) calc( 5*var(--r)/2),
+    radial-gradient(var(--r) at 100% 100%,var(--c1)) 0 calc(-1*var(--r)),   
+    radial-gradient(var(--r) at 0%   50% ,var(--c1)) 0 calc(-4*var(--r)),
+    var(--g1) calc(-1*var(--s)) calc(-7*var(--r)/2),
+    var(--g0) calc(-1*var(--s)) calc(-5*var(--r)/2),
+    var(--p) calc(-2*var(--s)) var(--r),
+    var(--g0) calc(-1*var(--s)) calc(var(--r)/ 2),
+    var(--g1) calc(-1*var(--s)) calc(var(--r)/-2),
+    var(--g0) 0 calc(-1*var(--r)),
+    var(--g1) var(--s) calc(var(--r)/-2),
+    var(--g0) var(--s) calc(var(--r)/ 2) 
+    #ffffff; 
+  background-size: calc(4*var(--s)) calc(6*var(--r));
+} */
 
 header {
   position: fixed;
