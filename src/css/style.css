@@ -199,6 +199,35 @@ section {
   border-radius: 10px 10px 0px 0px;
 }
 
+.container-Entryforms {
+  width: 100%;
+  height: 80vh;
+  background-color: #ececec;
+}
+
+.container-cards {
+}
+
+.container-cursos {
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(236, 236, 236);
+}
+
+.img-curso {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.cards-curso {
+  width: 350px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: rgb(18, 125, 197);
+}
+
 /* .projects-container {
   --r: 56px; 
   --c1: #43dcdf  99%,#0000 101%;

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas Nutricionais</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      form {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+
+      input,
+      select {
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #218838;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f4f4f4;
+      }
+
+      .edit-btn,
+      .remove-btn {
+        padding: 5px 10px;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .edit-btn {
+        background-color: #ffc107;
+        color: white;
+      }
+
+      .remove-btn {
+        background-color: #dc3545;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gerador de Tabelas Nutricionais</h1>
+
+    <form id="product-form">
+      <label for="product-name">Nome do Produto:</label>
+      <input type="text" id="product-name" required />
+
+      <label for="package-weight">Peso Final (g):</label>
+      <input type="number" id="package-weight" required />
+
+      <label for="portion">Porção (g):</label>
+      <input type="number" id="portion" required />
+
+      <label for="servings-per-package">Porções por Embalagem:</label>
+      <input type="number" id="servings-per-package" required />
+
+      <label for="gluten">Contém Glúten?</label>
+      <select id="gluten" required>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+
+      <label for="lactose">Contém Lactose?</label>
+      <select id="lactose" required>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+    </form>
+
+    <form id="ingredient-form">
+      <h3>Adicionar Ingredientes</h3>
+
+      <label for="ingredient">Ingrediente:</label>
+      <input type="text" id="ingredient" placeholder="Ex: Açúcar" required />
+
+      <label for="ingredient-weight">Quantidade (g):</label>
+      <input type="number" id="ingredient-weight" required />
+
+      <button type="submit">Adicionar Ingrediente</button>
+    </form>
+
+    <div id="table-container"></div>
+
+    <script>
+      // script.js
+
+      let ingredients = [];
+
+      const apiKey = "adf063b56ad64f27845865af372abb14"; // Substitua pela sua chave de API do Spoonacular
+
+      document
+        .getElementById("ingredient-form")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const ingredientName = document.getElementById("ingredient").value;
+          const ingredientWeight =
+            document.getElementById("ingredient-weight").value;
+
+          // Buscar dados do ingrediente da API do Spoonacular
+          const apiData = await fetch(
+            `https://api.spoonacular.com/food/ingredients/search?query=${ingredientName}&apiKey=${apiKey}`
+          )
+            .then((response) => response.json())
+            .then((data) => data.results[0]); // Pegue o primeiro resultado
+
+          if (apiData) {
+            const ingredient = {
+              name: apiData.name,
+              weight: ingredientWeight,
+              // Aqui você pode adicionar mais dados retornados da API, como calorias, proteínas, etc.
+            };
+
+            // Adicionar o ingrediente ao array
+            ingredients.push(ingredient);
+
+            // Atualizar a tabela de ingredientes
+            updateIngredientTable();
+          } else {
+            alert("Ingrediente não encontrado.");
+          }
+
+          // Limpar os campos
+          document.getElementById("ingredient").value = "";
+          document.getElementById("ingredient-weight").value = "";
+        });
+
+      function updateIngredientTable() {
+        let tableHTML = `
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingrediente</th>
+                    <th>Quantidade (g)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
+
+        ingredients.forEach((ingredient, index) => {
+          tableHTML += `
+            <tr>
+                <td>${ingredient.name}</td>
+                <td>${ingredient.weight}</td>
+                <td>
+                    <button class="edit-btn" onclick="editIngredient(${index})">Editar</button>
+                    <button class="remove-btn" onclick="removeIngredient(${index})">Remover</button>
+                </td>
+            </tr>
+        `;
+        });
+
+        tableHTML += `</tbody></table>`;
+
+        document.getElementById("table-container").innerHTML = tableHTML;
+
+        // Após atualizar a tabela de ingredientes, criar a tabela nutricional final
+        generateNutritionalTable();
+      }
+
+      function editIngredient(index) {
+        const ingredient = ingredients[index];
+
+        document.getElementById("ingredient").value = ingredient.name;
+        document.getElementById("ingredient-weight").value = ingredient.weight;
+
+        ingredients.splice(index, 1); // Remove o ingrediente da lista para permitir a edição
+      }
+
+      function removeIngredient(index) {
+        ingredients.splice(index, 1);
+        updateIngredientTable();
+      }
+
+      function generateNutritionalTable() {
+        const productName = document.getElementById("product-name").value;
+        const packageWeight = document.getElementById("package-weight").value;
+        const portion = document.getElementById("portion").value;
+        const servingsPerPackage = document.getElementById(
+          "servings-per-package"
+        ).value;
+        const gluten = document.getElementById("gluten").value;
+        const lactose = document.getElementById("lactose").value;
+
+        let nutritionalTableHTML = `
+        <h2>Tabela Nutricional</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Produto</th>
+                    <th>Peso Final (g)</th>
+                    <th>Porção (g)</th>
+                    <th>Porções por Embalagem</th>
+                    <th>Contém Glúten</th>
+                    <th>Contém Lactose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${productName}</td>
+                    <td>${packageWeight}</td>
+                    <td>${portion}</td>
+                    <td>${servingsPerPackage}</td>
+                    <td>${gluten}</td>
+                    <td>${lactose}</td>
+                </tr>
+            </tbody>
+        </table>
+    `;
+
+        document.getElementById("table-container").innerHTML +=
+          nutritionalTableHTML;
+      }
+    </script>
+  </body>
+</html>
