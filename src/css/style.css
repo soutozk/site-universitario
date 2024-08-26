@@ -201,17 +201,20 @@ section {
 
 .container-Entryforms {
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   background-color: #ececec;
 }
 
 .container-cards {
+  width: 90%;
+  height: 90%;
+  background-color: green;
 }
 
 .container-cursos {
   width: 100%;
   height: 80vh;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(255, 27, 27);
 }
 
 .img-curso {
