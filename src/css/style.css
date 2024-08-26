@@ -202,13 +202,49 @@ section {
 .container-Entryforms {
   width: 100%;
   height: 60vh;
+
   background-color: #ececec;
+}
+
+.title-forms {
+  width: 50%;
+  font-size: 22px;
+  padding-top: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.card-forms {
+  width: 300px;
+  height: 150px;
+  border: solid 3px;
+  border-color: #43dcdf;
+}
+
+.title-forms-card {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.text-forms-card {
+  width: 95%;
+  height: auto;
+  margin: 10px auto;
+  text-align: center;
+  background-color: greenyellow;
 }
 
 .container-cards {
   width: 90%;
-  height: 90%;
-  background-color: green;
+  height: 60%;
+  gap: 20px;
+
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
 }
 
 .container-cursos {
