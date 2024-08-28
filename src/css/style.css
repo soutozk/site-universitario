@@ -267,6 +267,84 @@ section {
   background-color: rgb(18, 125, 197);
 }
 
+/*  */
+/*  */
+/*  */
+
+.container-top-cursos {
+  /* background-color: pink; */
+  width: 100%;
+  height: 75vh;
+  background-image: url(/src/img/grupo-multietnico-de-homens-e-mulheres-jovens-que-estudam-em-ambientes-fechados.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.container-cursos-pg {
+  width: 100%;
+  height: auto;
+
+  /* background-color: rgb(132, 0, 255); */
+}
+
+.cursos-bottom-pg {
+  width: 95%;
+  height: 100%;
+  gap: 45px;
+  padding-top: 10%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+}
+
+.cards-cursos-pg {
+  width: 350px;
+  height: 330px;
+  border-radius: 15px 15px 15px;
+  box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px;
+  background-color: #ffffff;
+}
+
+.box-img-cursos {
+  width: 350px;
+  height: 200px;
+  border-radius: 15px 15px 40px 0px;
+  /* background-color: orangered; */
+}
+
+.img-curso-pg {
+  width: 350px;
+  height: 200px;
+  border-radius: 15px 15px 40px 0px;
+}
+
+.texts-curso-box {
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  /* background-color: rgb(255, 217, 0); */
+}
+
+.title-curso-pg {
+  /* background-color: blue; */
+}
+
+.paragraph-curso-pg {
+  /* background-color: lightsteelblue; */
+}
+
+.buttom-cursos-pg {
+  width: 95%;
+  height: 30px;
+  margin: auto;
+  /* background-color: purple; */
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .projects-container {
     width: 100%;
@@ -449,6 +527,7 @@ header {
   display: flex;
   padding: 10px;
   transition: background-color 0.3s ease;
+  font-family: Arial, sans-serif;
   z-index: 1000;
 }
 
