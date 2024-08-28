@@ -373,6 +373,58 @@ section {
   /* background-color: purple; */
 }
 
+/*  */
+/*  */
+/* */
+
+.container-top-estudant {
+  width: 100%;
+  height: 70vh;
+  background-color: orangered;
+}
+
+.container-estudant {
+  width: 100%;
+  height: 85%;
+  background-color: blueviolet;
+}
+
+.bottom-estudant {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  background-color: green;
+}
+
+.title-estutant {
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+
+.box-btn-estudant {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
+  margin: 25px auto;
+  background-color: pink;
+}
+
+.btn-estudant {
+  width: 150px;
+  height: 100px;
+  background-color: #43dcdf;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .projects-container {
     width: 100%;
@@ -545,93 +597,6 @@ section {
     #ffffff; 
   background-size: calc(4*var(--s)) calc(6*var(--r));
 } */
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 35px;
-  display: flex;
-  padding: 10px;
-  transition: background-color 0.3s ease;
-  font-family: Arial, sans-serif;
-  z-index: 1000;
-}
-
-header.transparent {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-header.solid {
-  background-color: rgba(255, 255, 255, 0.61);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 20px 20px;
-}
-
-.logo img {
-  height: 35px;
-  right: 25px;
-}
-
-nav {
-  margin: auto;
-  /* background-color: red; */
-}
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 0 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-}
-
-a {
-  font-size: 14px;
-  color: #e1e1e1;
-  font-family: inherit;
-  font-weight: 800;
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background: none;
-  text-transform: uppercase;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-}
-
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-a:focus:after,
-a:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-a:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
-}
 
 /*scroll*/
 body::-webkit-scrollbar {

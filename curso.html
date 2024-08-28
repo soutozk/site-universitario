@@ -14,12 +14,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/nav.css" />
     <link rel="stylesheet" href="/src/css/animate.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title></title>
   </head>
   <body>
+    <!-- div loader -->
+    <div id="overlay">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
     <header id="navbar">
       <div class="logo">
         <a href="/index.html"
@@ -30,16 +40,16 @@
         <ul>
           <li><a href="#">Link </a></li>
           <li><a href="#">Link </a></li>
-          <li><a href="#">Cusos </a></li>
+          <li><a href="/curso.html">Cursos </a></li>
           <li><a href="#">Projetos </a></li>
-          <li><a href="#">Alunos</a></li>
+          <li><a href="/estudante.html">Estudante</a></li>
           <li><a href="#">Educadores</a></li>
           <li><a href="#">Sobre</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
+      <section id="content">
         <div class="container-top-cursos"></div>
 
         <div class="container-cursos-pg">
@@ -48,7 +58,8 @@
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
-                  src="/src/img/arquitetura.jpg"
+                  src="/src/img/arquitetura.jpg "
+                  loading="lazy"
                   alt=""
                 />
               </div>
@@ -67,6 +78,7 @@
                 <img
                   class="img-curso-pg"
                   src="/src/img/cienciasdacomputaçao.jpg"
+                  loading="lazy"
                   alt=""
                 />
               </div>
@@ -82,7 +94,12 @@
             </div>
             <div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/biomed.jpg" alt="" />
+                <img
+                  class="img-curso-pg"
+                  src="/src/img/biomed.jpg"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -96,7 +113,12 @@
             </div>
             <div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/medicina.jpg" alt="" />
+                <img
+                  class="img-curso-pg"
+                  src="/src/img/medicina.jpg"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -110,7 +132,12 @@
             </div>
             <div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/jornalimo.jpg" alt="" />
+                <img
+                  class="img-curso-pg"
+                  src="/src/img/jornalimo.jpg"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -127,6 +154,7 @@
                 <img
                   class="img-curso-pg"
                   src="/src/img/adiministraçao.jpg"
+                  loading="lazy"
                   alt=""
                 />
               </div>
@@ -142,7 +170,12 @@
             </div>
             <div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/design.jpg" alt="" />
+                <img
+                  class="img-curso-pg"
+                  src="/src/img/design.jpg"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -157,7 +190,12 @@
 
             <div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/farmacia.jpg" alt="" />
+                <img
+                  class="img-curso-pg"
+                  src="/src/img/farmacia.jpg"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -174,6 +212,7 @@
                 <img
                   class="img-curso-pg"
                   src="/src/img/gastronomia.jpg"
+                  loading="lazy"
                   alt=""
                 />
               </div>
@@ -202,6 +241,7 @@
         <div class="vw-plugin-top-wrapper"></div>
       </div>
     </div>
+
     <!-- button up -->
     <!-- <div class="box-btn">
       <button  class="material-symbols-outlined">
@@ -211,5 +251,6 @@
 
     <!-- scripts internos -->
     <script src="/src/js/script.js"></script>
+    <script src="/src/js/sla.js"></script>
   </body>
 </html>

@@ -344,3 +344,9 @@ prevBtn.addEventListener("click", () => {
     (currentSetIndex - 1 + setsOfCards.length) % setsOfCards.length;
   updateCards();
 });
+
+//
+//
+//
+//
+//
