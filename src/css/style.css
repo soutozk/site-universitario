@@ -285,8 +285,10 @@ section {
 .container-cursos-pg {
   width: 100%;
   height: auto;
-
-  /* background-color: rgb(132, 0, 255); */
+  background-image: url(/src/img/PngItem_9040.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.342);
 }
 
 .cursos-bottom-pg {
@@ -299,6 +301,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
   /* background-color: green; */
 }
 
