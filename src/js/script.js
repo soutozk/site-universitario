@@ -173,7 +173,7 @@ const setsOfCards = [
   ],
   // Segundo conjunto de 9 cards
   [
-    <div class="cards-cursos-pg">
+    ` <div class="cards-cursos-pg">
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
@@ -190,8 +190,9 @@ const setsOfCards = [
               <div class="buttom-cursos-pg">
                 <a href="">plus</a>
               </div>
-            </div>
-            <div class="cards-cursos-pg">
+            </div>`,
+
+    `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
@@ -208,8 +209,9 @@ const setsOfCards = [
               <div class="buttom-cursos-pg">
                 <a href="">plus</a>
               </div>
-            </div>
-            <div class="cards-cursos-pg">
+            </div>`,
+
+    `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
                 <img class="img-curso-pg" src="/src/img/odonto.jpg" alt="" />
               </div>
@@ -222,8 +224,9 @@ const setsOfCards = [
               <div class="buttom-cursos-pg">
                 <a href="">plus</a>
               </div>
-            </div>
-            <div class="cards-cursos-pg">
+            </div>`,
+
+    `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
                 <img class="img-curso-pg" src="/src/img/enfermagem.jpg" alt="" />
               </div>
@@ -236,8 +239,9 @@ const setsOfCards = [
               <div class="buttom-cursos-pg">
                 <a href="">plus</a>
               </div>
-            </div>
-            <div class="cards-cursos-pg">
+            </div>`,
+
+    ` <div class="cards-cursos-pg">
               <div class="box-img-cursos">
                 <img class="img-curso-pg" src="/src/img/agronegocio.jpg" alt="" />
               </div>
@@ -250,8 +254,9 @@ const setsOfCards = [
               <div class="buttom-cursos-pg">
                 <a href="">plus</a>
               </div>
-            </div>
-            <div class="cards-cursos-pg">
+            </div>`,
+
+    `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
@@ -268,8 +273,9 @@ const setsOfCards = [
               <div class="buttom-cursos-pg">
                 <a href="">plus</a>
               </div>
-            </div>
-            <div class="cards-cursos-pg">
+            </div>`,
+
+    `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
                 <img class="img-curso-pg" src="/src/img/de3sign int].jpg" alt="" />
               </div>
@@ -282,9 +288,9 @@ const setsOfCards = [
               <div class="buttom-cursos-pg">
                 <a href="">plus</a>
               </div>
-            </div>
+            </div>`,
 
-            <div class="cards-cursos-pg">
+    `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
                 <img class="img-curso-pg" src="/src/img/cienciasconytabeis.png" alt="" />
               </div>
@@ -297,8 +303,9 @@ const setsOfCards = [
               <div class="buttom-cursos-pg">
                 <a href="">plus</a>
               </div>
-            </div>
-            <div class="cards-cursos-pg">
+            </div>`,
+
+    `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
@@ -315,7 +322,7 @@ const setsOfCards = [
               <div class="buttom-cursos-pg">
                 <a href="">plus</a>
               </div>
-            </div>
+            </div>`,
   ],
 ];
 
