@@ -17,7 +17,9 @@
 .fade-in-up-paragraph {
   animation: fadeInUp 1.4s ease-out;
 }
-
+/*  */
+/*  */
+/*  */
 .loader {
   --dim: 3rem;
   width: var(--dim);
@@ -28,7 +30,7 @@
 
 .loader .circle {
   --color: #34888a;
-  --dim: 1rem;
+  --dim: 2rem;
   width: var(--dim);
   height: var(--dim);
   background-color: var(--color);
@@ -89,7 +91,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;

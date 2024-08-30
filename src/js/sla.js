@@ -1,5 +1,5 @@
 window.onload = function () {
-  const minLoadingTime = 1000;
+  const minLoadingTime = 200;
 
   const loadingStartTime = new Date().getTime();
 

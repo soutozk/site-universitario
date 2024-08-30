@@ -31,7 +31,7 @@ const setsOfCards = [
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
-                  src="/src/img/arquitetura.jpg"
+                  src="https://img.freepik.com/fotos-gratis/equipe-de-arquiteto-de-construcao-trabalhando-em-um-escritorio-na-planta_482257-4620.jpg?t=st=1724937743~exp=1724941343~hmac=3e6e11e7bc270e0ed60f76517eccfff6841808cf36d63444f350fa0854faeaa1&w=740"
                   alt=""
                 />
               </div>
@@ -49,7 +49,7 @@ const setsOfCards = [
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
-                  src="/src/img/cienciasdacomputaçao.jpg"
+                  src="https://imperiowp.com.br/storage/2024/05/curl-error-696x464.jpg"
                   alt=""
                 />
               </div>
@@ -65,7 +65,7 @@ const setsOfCards = [
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/biomed.jpg" alt="" />
+                <img class="img-curso-pg" src="https://img.freepik.com/fotos-gratis/retrato-de-uma-mulher-biologa-sorridente-analisando-organismos-geneticamente-modificados_482257-21597.jpg?t=st=1724938204~exp=1724941804~hmac=48110d75f648a927075d3db36953ebdcda1365b0610e0889fb25897ac83aa452&w=740" alt="" />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -79,7 +79,7 @@ const setsOfCards = [
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/medicina.jpg" alt="" />
+                <img class="img-curso-pg" src="https://fusne.com/wp-content/uploads/2023/04/curso-faculdade-medicina-22.jpg" alt="" />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -93,7 +93,7 @@ const setsOfCards = [
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/jornalimo.jpg" alt="" />
+                <img class="img-curso-pg" src="https://www.noarcomunicacao.com/wp-content/uploads/2024/06/group-people-taking-interview-outdoors-756x478.jpg" alt="" />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -109,7 +109,7 @@ const setsOfCards = [
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
-                  src="/src/img/adiministraçao.jpg"
+                  src="https://contactusrh.com.br/wp-content/uploads/2023/11/Departamento-pessoal-para-empresas-conheca-os-erros-mais-comuns-e-como-resolve-los-1024x683.jpg"
                   alt=""
                 />
               </div>
@@ -125,7 +125,7 @@ const setsOfCards = [
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/design.jpg" alt="" />
+                <img class="https://lazersemfronteiras.com.br/wp-content/uploads/2023/08/alternativas-gratuitas-ao-Canva.jpg" alt="" />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -140,7 +140,7 @@ const setsOfCards = [
 
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/farmacia.jpg" alt="" />
+                <img class="img-curso-pg" src="https://img.freepik.com/fotos-gratis/farmaceutico-masculino-verificando-a-pressao-sanguinea-da-mulher_23-2150359152.jpg?t=st=1724938806~exp=1724942406~hmac=6f1270f403df79d5cdfabc4662e41831224b4c11c2f47205c4139b472a3e9003&w=740" alt="" />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -156,8 +156,7 @@ const setsOfCards = [
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
-                  src="/src/img/gastronomia.jpg"
-                  alt=""
+                  src="https://comvcportal.com.br/images/noticias/117069/3940253a1cd7cf87020a5ecd0d4cd41c.jpg"
                 />
               </div>
               <div class="texts-curso-box">
@@ -177,7 +176,7 @@ const setsOfCards = [
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
-                  src="/src/img/nutri.jpg"
+                  src="https://clinicawa.com.br/wp-content/uploads/2024/05/clinica-de-emagrecimento-1.webp"
                   alt=""
                 />
               </div>
@@ -196,7 +195,7 @@ const setsOfCards = [
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
-                  src="/src/img/vet.jpg"
+                  src="https://irisveterinaria.com.br/wp-content/uploads/2022/06/Como-tratar-%C3%BAlcera-de-c%C3%B3rnea-em-c%C3%A3es-1024x683.jpg"
                   alt=""
                 />
               </div>
@@ -213,7 +212,7 @@ const setsOfCards = [
 
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/odonto.jpg" alt="" />
+                <img class="img-curso-pg" src="https://img.freepik.com/free-photo/young-female-patient-having-dental-procedure-orthodontist_23-2148985773.jpg?t=st=1724888149~exp=1724891749~hmac=a7b051c5e9ba3ba5bb0e1f7a09b5bffb8bcfbba16c73d70baf16cb771a359048&w=740" alt="" />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -228,7 +227,7 @@ const setsOfCards = [
 
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/enfermagem.jpg" alt="" />
+                <img class="img-curso-pg" src="https://telemedicinamorsch.com.br/wp-content/uploads/2024/02/enfermeiro-do-trabalho-telemedicina-morsch.jpg" alt="" />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -243,7 +242,7 @@ const setsOfCards = [
 
     ` <div class="cards-cursos-pg">
               <div class="box-img-cursos">
-                <img class="img-curso-pg" src="/src/img/agronegocio.jpg" alt="" />
+                <img class="img-curso-pg" src="https://uenp.edu.br/media/k2/items/cache/19fcdc4270102c23208fae71d96c386a_L.jpg" alt="" />
               </div>
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
@@ -260,7 +259,7 @@ const setsOfCards = [
               <div class="box-img-cursos">
                 <img
                   class="img-curso-pg"
-                  src="/src/img/analisedesenvolvimentodesistemas.jpg"
+                  src="https://i0.wp.com/falandotech.com/wp-content/uploads/2023/10/divulgacao-freepik-ft18102023.jpg?w=660&ssl=1"
                   alt=""
                 />
               </div>
