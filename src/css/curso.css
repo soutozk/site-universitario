@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+}
+
+.main-curso {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  background-image: url(/src/img/PngItem_9040.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 50px;
+}
+
+.course-info {
+  font-family: Arial, sans-serif;
+  color: white;
+  width: 50%;
+  height: 65vh;
+  padding: 35px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background-color: #43dcdf;
+}
+
+.course-info h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.course-info h3 {
+  margin-bottom: 8px;
+}
+.course-info p {
+  text-align: justify;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.container-ul {
+  width: 50%;
+  /* background-color: #00ff6a; */
+}
+.contact-area {
+  font-family: Arial, sans-serif;
+
+  width: 22%;
+  height: 65vh;
+  padding: 35px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background-color: rgb(255, 255, 255);
+
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.contact-area h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background-color: #43dcdf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
