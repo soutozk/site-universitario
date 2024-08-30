@@ -380,30 +380,34 @@ section {
 .container-top-estudant {
   width: 100%;
   height: 70vh;
-  background-color: orangered;
+  background-image: url(https://img.freepik.com/free-photo/smart-good-looking-creative-young-brunette-girl-giving-advice-pointing-upper-left-corner-suggest-promo-smiling-pleased-approve-some-product-standing-white-background_176420-36871.jpg?t=st=1725041673~exp=1725045273~hmac=c1167c92e853b1457752f7686282fb21ebad4d1b340d6bcff5e5d8398b6f0807&w=740);
+  background-position: 500px 20px;
+  background-repeat: no-repeat;
+  background-color: rgb(246, 247, 251);
 }
-
 .container-estudant {
   width: 100%;
   height: 85%;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .bottom-estudant {
   width: 95%;
   height: 95%;
   margin: auto;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .title-estutant {
   width: 50%;
-  height: 50px;
+  height: 70px;
+
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blue;
+  font-family: Arial, sans-serif;
+  /* background-color: blue; */
 }
 
 .box-btn-estudant {
@@ -416,13 +420,33 @@ section {
   gap: 25px;
 
   margin: 25px auto;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .btn-estudant {
   width: 150px;
   height: 100px;
-  background-color: #43dcdf;
+  background-color: #ffffff;
+}
+
+.img-est {
+  width: 65px;
+  margin: auto;
+  /* background-color: red; */
+}
+
+.text-est {
+  width: 100%;
+  color: #333;
+  font-weight: 550;
+  margin-top: 5px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.img-est img {
+  width: 65px;
+  margin: auto;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
