@@ -14,8 +14,8 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("load", function () {
   // pull the class and animate the title and paragraph
-  document.querySelector(".title-bg").classList.add("fade-in-up-title");
-  document.querySelector(".paragraph-bg").classList.add("fade-in-up-paragraph");
+  document.getElementById("animate1").classList.add("fade-in-up-title");
+  document.getElementById("animate2").classList.add("fade-in-up-paragraph");
 });
 
 //animate card
@@ -38,12 +38,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
@@ -56,12 +57,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
@@ -70,12 +72,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
@@ -84,12 +87,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
@@ -98,12 +102,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
@@ -116,12 +121,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
@@ -130,12 +136,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
 
     `<div class="cards-cursos-pg">
@@ -145,12 +152,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
     `<div class="cards-cursos-pg">
               <div class="box-img-cursos">
@@ -162,12 +170,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
   ],
   // Segundo conjunto de 9 cards
@@ -183,12 +192,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
 
     `<div class="cards-cursos-pg">
@@ -202,12 +212,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
 
     `<div class="cards-cursos-pg">
@@ -217,12 +228,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
 
     `<div class="cards-cursos-pg">
@@ -232,12 +244,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
 
     ` <div class="cards-cursos-pg">
@@ -247,12 +260,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
 
     `<div class="cards-cursos-pg">
@@ -266,12 +280,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
 
     `<div class="cards-cursos-pg">
@@ -281,12 +296,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
 
     `<div class="cards-cursos-pg">
@@ -296,12 +312,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
 
     `<div class="cards-cursos-pg">
@@ -315,12 +332,13 @@ const setsOfCards = [
               <div class="texts-curso-box">
                 <h1 class="title-curso-pg">Green Campus Project</h1>
                 <p class="paragraph-curso-pg">
-                  Elohin University launched the Green Campus Project in 2020
+                  Learn from the Best, Transform Your Future.
                 </p>
+              
+              <div class="btn-curso">
+                <a href="">Secure Your Spot</a>
               </div>
-              <div class="buttom-cursos-pg">
-                <a href="">plus</a>
-              </div>
+             </div>
             </div>`,
   ],
 ];
