@@ -437,6 +437,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgb(246, 247, 251);
+<<<<<<< HEAD
   box-shadow: rgba(0, 0, 0, 0.322) 0px 3px 6px, rgba(0, 0, 0, 0.541) 0px 3px 6px;
   display: flex;
   justify-content: center;
@@ -470,6 +471,19 @@ section {
   color: #ffffff;
   z-index: 10000;
   /* background-color: aquamarine; */
+=======
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  align-items: center;
+}
+
+.estudant-top-tet {
+  width: 50%;
+  font-size: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+>>>>>>> abddb4ed8a7dce75956755e64c42c02ea9ef231d
 }
 
 .container-estudant {
