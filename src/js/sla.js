@@ -21,3 +21,11 @@ window.onload = function () {
   // Esconde o loader após o carregamento e o tempo mínimo
   hideLoader();
 };
+
+const menuToggle = document.querySelector("#mobile-menu");
+const navList = document.querySelector(".nav-list");
+
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("open");
+  navList.classList.toggle("open");
+});

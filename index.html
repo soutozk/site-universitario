@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="stylesheet" href="/src/css/nav.css">
     <link rel="stylesheet" href="/src/css/animate.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- owscarosel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title></title>
   </head>
@@ -24,20 +29,25 @@
       </div>
     </div> -->
     <header id="navbar">
-      <div class="logo">
-        <img src="/src/img/Captura de tela 2024-08-19 234158.png" alt="Logo" />
-      </div>
-      <nav>
-        <ul>
+  <div class="logo">
+    <img src="/src/img/Captura de tela 2024-08-19 234158.png" alt="Logo" />
+  </div>
+  <div class="menu-toggle" id="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="/curso.html" class="nav-link">Courses</a></li>
+      <li><a href="/projetos.html" class="nav-link">Projects</a></li>
+      <li><a href="/estudante.html" class="nav-link">Students</a></li>
+      <li><a href="/educadores.html" class="nav-link">Educators</a></li>
+      <li><a href="/sobre.html" class="nav-link">About</a></li>
+    </ul>
+  </nav>
+</header>
 
-          <li><a href="/curso.html">Cursos </a></li>
-          <li><a href="#">Projetos </a></li>
-          <li><a href="/estudante.html">Estudante</a></li>
-          <li><a href="/educadores.html">Educadores</a></li>
-          <li><a href="#">Sobre</a></li>
-        </ul>
-      </nav>
-    </header>
     <main id="content">
       <section >
         <div class="containe-crs">
@@ -134,6 +144,9 @@
         </div>
         <div class="data-projects">
           <p>25/08/2020</p>
+        </div>
+        <div class="btncardprojects">
+        <button class="projectsbtn"><a href="" >mais</a></button>
         </div>
       </div>
       <div class="cards-projects"
@@ -247,9 +260,9 @@
               <p>In some courses and modalities you can also enter through a <spam>2nd Degree, Pedagogical Training </spam>or <spam>Double / Triple Degree.</spam></p>
             </div>
         </div>
+      </section>
 
-
-        <div class="container-cursos">
+        <!-- <div class="container-cursos">
           <div class="title-curso"><h1>Check the courses by area of ​​knowledge</h1></div>
          <div class="cards-curso">
         <div class="img-curso">
@@ -276,9 +289,87 @@
         </div>
       </div>
     </div> 
+        </div> -->
+            <!-- comentarios -->
+     <section class="comentarios">
+  <div class="comments-container" 
+       data-aos="fade-up" 
+       data-aos-delay="100" 
+       data-aos-duration="1500">
+    <div class="coment-titulo">
+      <h1>What Our Students Are Sayin</h1>
+    </div>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="comment-card">
+          <h3>Sarah Johnson<span class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+          <p>"Elohin goes beyond theory, offering a hands-on approach that allows me to apply knowledge directly to real-world projects."</p>
         </div>
-      </section>
+      </div>
+      <div class="item">
+        <div class="comment-card">
+          <h3>Michael Roberts<span class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+          <p>"I highly recommend Elohin for anyone looking for a welcoming and motivating environment, with opportunities for both academic and personal growth."</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="comment-card">
+          <h3>Emily Davis<span class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+          <p>"I’m impressed with the quality of education at Elohin. The student-centered focus and teaching methodology helped me develop essential skills."</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="comment-card">
+          <h3>Olivia Williams<span class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+          <p>"Elohin's courses are well-structured and offer exceptional support for students to achieve their goals."</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="comment-card">
+          <h3>Daniel Thompson<span class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+          <p>"At Elohin, I found an environment that fosters continuous learning and prepares me for the job market."</p>
+        </div>
+      </div>
+       <div class="item"></div>
+        <div class="comment-card">
+          <h3>James Smith<span class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+          <p>"Elohin has been an amazing experience! The professors are highly qualified, and the course content is both deep and practical."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
+
+<footer style="background-color: #4b4a4a; color: white; padding: 20px 0; text-align: center; ">
+  <div class="footer-content" style="justify-content: space-around; align-items: center;">
+    <div class="footer-nav" style="flex: 1;"> 
+       <div class="footer-verse" style="flex: 1;"></div>
+      <p style="font-size: 16px; font-style: italic; margin: 20px 0; padding: 15px;">"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future." <br> - Jeremiah 29:11</p>
+    </div>
+      <ul style="display: flex; align-items: center; justify-content: center; list-style: none; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+        <li><a href="/curso.html" class="nav-link"  style="color: white; text-decoration: none; margin: 10px;">Courses</a></li>
+        <li><a href="/projetos.html" class="nav-link"  style="color: white; text-decoration: none; margin: 10px;">Projects</a></li>
+        <li><a href="/estudante.html" class="nav-link"  style="color: white; text-decoration: none; margin: 10px;">Students</a></li>
+        <li><a href="/educadores.html" class="nav-link"  style="color: white; text-decoration: none; margin: 10px;">Educators</a></li>
+        <li><a href="/sobre.html" class="nav-link"  style="color: white; text-decoration: none; margin: 10px;">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social" style="flex: 1; margin: 20px 0;">
+      <a href="https://www.facebook.com" target="_blank" style="color: white; margin: 0 10px; "><i class="fab fa-facebook-f fa-2x"></i></a>
+      <a href="https://www.twitter.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.instagram.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.instagram.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://www.instagram.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom" style="font-size: 14px; color: #ffffff; margin-top: 20px;">
+    <p>&copy; 2024 Elohin University. All rights reserved.</p>
+  </div>
+</footer>
+
+
     <!-- vlibras -->
     <div vw class="enabled">
       <div vw-access-button class="active"></div>
@@ -292,6 +383,31 @@
        <a href="">arrow_upward</a>
       </button>
      </div> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  });
+</script>
+
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
       new window.VLibras.Widget("https://vlibras.gov.br/app");

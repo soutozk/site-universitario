@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/css/style.css" />
-    <link rel="stylesheet" href="/src/css/nav2.css" />
+    <link rel="stylesheet" href="/src/css/nav.css" />
     <link rel="stylesheet" href="/src/css/animate.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -29,23 +29,26 @@
         <div class="circle"></div>
       </div>
     </div>  -->
-    <header id="navbar">
-      <div class="logo">
-        <a href="/index.html"
-          ><img src="/src/img/Captura de tela 2024-08-19 234158.png" alt="Logo"
-        /></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/index.html">inicio</a></li>
-          <li><a href="/curso.html">Cursos </a></li>
-          <li><a href="#">Projetos </a></li>
-          <li><a href="/estudante.html">Estudante</a></li>
-          <li><a href="/educadores.html">Educadores</a></li>
-          <li><a href="#">Sobre</a></li>
-        </ul>
-      </nav>
-    </header>
+       <header id="navbar">
+  <div class="logo">
+    <img src="/src/img/Captura de tela 2024-08-19 234158.png" alt="Logo" />
+  </div>
+  <div class="menu-toggle" id="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav>
+    <ul class="nav-list">
+       <li><a href="/index.html" class="nav-link">Home</a></li>
+      <li><a href="/curso.html" class="nav-link">Courses</a></li>
+      <li><a href="/projetos.html" class="nav-link">Projects</a></li>
+      <li><a href="/estudante.html" class="nav-link">Students</a></li>
+      <li><a href="/educadores.html" class="nav-link">Educators</a></li>
+      <li><a href="/sobre.html" class="nav-link">About</a></li>
+    </ul>
+  </nav>
+</header>
     <main>
       <section id="content">
         <div class="container-top-estudant">
@@ -252,6 +255,34 @@
         </div>
       </section>
     </main>
+    <footer style="background-color: #4b4a4a; color: white; padding: 20px 0; text-align: center; ">
+  <div class="footer-content" style="justify-content: space-around; align-items: center;">
+    <div class="footer-nav" style="flex: 1;"> 
+       <div class="footer-verse" style="flex: 1;"></div>
+      <p style="font-size: 16px; font-style: italic; margin: 20px 0; padding: 15px;">"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future." <br> - Jeremiah 29:11</p>
+    </div>
+      <ul style="display: flex; align-items: center; justify-content: center; list-style: none; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+        <li><a href="/curso.html" class="nav-link"  style="color: white; text-decoration: none; margin: 10px;">Courses</a></li>
+        <li><a href="/projetos.html" class="nav-link"  style="color: white; text-decoration: none; margin: 10px;">Projects</a></li>
+        <li><a href="/estudante.html" class="nav-link"  style="color: white; text-decoration: none; margin: 10px;">Students</a></li>
+        <li><a href="/educadores.html" class="nav-link"  style="color: white; text-decoration: none; margin: 10px;">Educators</a></li>
+        <li><a href="/sobre.html" class="nav-link"  style="color: white; text-decoration: none; margin: 10px;">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social" style="flex: 1; margin: 20px 0;">
+      <a href="https://www.facebook.com" target="_blank" style="color: white; margin: 0 10px; "><i class="fab fa-facebook-f fa-2x"></i></a>
+      <a href="https://www.twitter.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.instagram.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.instagram.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://www.instagram.com" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom" style="font-size: 14px; color: #ffffff; margin-top: 20px;">
+    <p>&copy; 2024 Elohin University. All rights reserved.</p>
+  </div>
+</footer>
+
     <!-- vlibras -->
     <div vw class="enabled">
       <div vw-access-button class="active"></div>

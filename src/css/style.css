@@ -6,7 +6,7 @@
 
 section {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .containe-crs {
@@ -40,6 +40,55 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.btn-crs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-crs button {
+  background-color: #2878a7; /* Cor de fundo principal */
+  color: white; /* Cor do texto */
+  padding: 12px 25px; /* Tamanho do botão */
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px; /* Botão arredondado */
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  cursor: pointer;
+}
+
+.btn-crs button:hover {
+  background-color: #43dcdf; /* Cor ao passar o mouse */
+  transform: translateY(-2px); /* Leve elevação */
+}
+
+.btn-crs button:active {
+  transform: translateY(2px); /* Leve afundamento ao clicar */
+}
+
+.btn-crs button span {
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2); /* Efeito de luz ao passar */
+  height: 100%;
+  width: 120%; /* Maior que o botão */
+  top: 0;
+  left: -100%; /* Fora do botão inicialmente */
+  transition: all 0.5s ease; /* Transição suave */
+}
+
+.btn-crs button:hover span {
+  left: 100%; /* O efeito atravessa o botão */
+}
+
+.btn-crs button:active span {
+  left: 50%; /* Fixa o efeito ao clicar */
 }
 
 .title-bg {
@@ -167,6 +216,109 @@ section {
   margin-top: 10px;
   font-size: 18px;
   /* background-color: lightcoral; */
+}
+
+.btncardprojects {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  /* background-color: pink; */
+}
+
+.projectsbtn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.projectsbtn:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  transform: translateY(-3px); /* Eleva o botão levemente ao passar o mouse */
+  color: #333;
+}
+
+.projectsbtn a {
+  color: white;
+  text-decoration: none;
+}
+
+.projectsbtn:active {
+  transform: translateY(1px);
+}
+
+/* comentarios */
+
+.comentarios {
+  height: 60vh;
+  margin-top: 8vh;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.owl-carousel {
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-prev,
+.owl-next {
+  font-size: 40px !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 10% !important;
+  color: #007bff !important;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  background-color: rgba(126, 121, 121, 0.7) !important;
+  transition: background-color 0.3s ease;
+}
+
+.comment-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  max-width: 90%;
+  height: 130px;
+}
+
+footer {
+  box-shadow: rgba(0, 0, 0, 0.411) 0px 2px 8px;
+}
+
+.comment-card h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.comment-card p {
+  margin-bottom: 0;
+  color: #555;
+  flex-grow: 1;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+
+.estrelas {
+  color: #2178effd;
+}
+
+.coment-titulo {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
 }
 
 .data-projects {
@@ -325,7 +477,7 @@ section {
 
 .container-cursos-pg {
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-image: url(/src/img/PngItem_9040.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -334,7 +486,7 @@ section {
 
 .cursos-bottom-pg {
   width: 95%;
-  height: 100%;
+  height: auto;
   gap: 45px;
   padding-top: 5%;
   margin: auto;
@@ -427,6 +579,7 @@ section {
 .title-curso-pg {
   /* background-color: blue; */
   font-size: 22px;
+  color: #161616;
 }
 
 .paragraph-curso-pg {
@@ -490,6 +643,7 @@ section {
 .container-estudant {
   width: 100%;
   height: 85%;
+  margin-bottom: 15%;
   /* background-color: blueviolet; */
 }
 
@@ -549,6 +703,21 @@ section {
 .img-est img {
   width: 65px;
   margin: auto;
+}
+
+/*scroll*/
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 20px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4fbbbc; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -694,47 +863,54 @@ section {
     /* background-color: pink; */
   }
 }
-/* .projects-container {
-  --r: 56px; 
-  --c1: #43dcdf  99%,#0000 101%;
-  --c2: #ffffff 99%,#0000 101%;
-  
-  --s:calc(var(--r)*.866); 
-  --g0:radial-gradient(var(--r),var(--c1));
-  --g1:radial-gradient(var(--r),var(--c2));
-  --f:radial-gradient(var(--r) at calc(100% + var(--s)) 50%,var(--c1));
-  --p:radial-gradient(var(--r) at 100% 50%,var(--c2));
-  background:
-    var(--f) 0 calc(-5*var(--r)/2),
-    var(--f) calc(-2*var(--s)) calc(var(--r)/2),
-    var(--p) 0 calc(-2*var(--r)),
-    var(--g0) var(--s) calc(-5*var(--r)/2),
-    var(--g1) var(--s) calc( 5*var(--r)/2),
-    radial-gradient(var(--r) at 100% 100%,var(--c1)) 0 calc(-1*var(--r)),   
-    radial-gradient(var(--r) at 0%   50% ,var(--c1)) 0 calc(-4*var(--r)),
-    var(--g1) calc(-1*var(--s)) calc(-7*var(--r)/2),
-    var(--g0) calc(-1*var(--s)) calc(-5*var(--r)/2),
-    var(--p) calc(-2*var(--s)) var(--r),
-    var(--g0) calc(-1*var(--s)) calc(var(--r)/ 2),
-    var(--g1) calc(-1*var(--s)) calc(var(--r)/-2),
-    var(--g0) 0 calc(-1*var(--r)),
-    var(--g1) var(--s) calc(var(--r)/-2),
-    var(--g0) var(--s) calc(var(--r)/ 2) 
-    #ffffff; 
-  background-size: calc(4*var(--s)) calc(6*var(--r));
-} */
 
-/*scroll*/
-body::-webkit-scrollbar {
-  width: 12px;
-  height: 20px; /* width of the entire scrollbar */
-}
-body::-webkit-scrollbar-track {
-  background: rgb(255, 255, 255); /* color of the tracking area */
+@media (min-width: 1920px) {
+  .tabelas-container {
+    margin-top: 80px;
+  }
+
+  .section-livros {
+    height: 80vh;
+  }
+
+  /* cards */
+
+  .conteudo {
+    background-color: #d0ddee;
+    margin-top: 10vh;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .recomendados {
+    padding-top: 45px;
+  }
+
+  .card {
+    margin: 20px;
+  }
+
+  .comment-card p {
+    margin-bottom: 0;
+    color: #555;
+    flex-grow: 1;
+    word-wrap: break-word;
+    font-size: 20px;
+  }
+
+  .comment-card h3 {
+    margin-top: 0;
+    font-size: 22px;
+  }
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: #4fbbbc; /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-  border: 3px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
+@media (max-width: 500px) {
+  /* comentarios  */
+  .comentarios {
+    height: 50vh;
+  }
+
+  .coment-titulo {
+    font-size: 16px;
+  }
 }
