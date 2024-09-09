@@ -100,7 +100,7 @@ a {
 .menu-toggle span {
   width: 25px;
   height: 2px;
-  background-color: #fff;
+  background-color: #000000;
   margin: 4px 0;
   transition: all 0.3s ease;
 }
@@ -117,6 +117,7 @@ a {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    text-align: center;
   }
 
   nav ul.nav-list.open {
@@ -136,7 +137,7 @@ a {
     display: flex;
     position: absolute;
     right: 35px;
-    top: 15px; /* Ajuste para a posição correta do menu */
+    top: 15px;
   }
 
   .menu-toggle.open span:nth-child(1) {

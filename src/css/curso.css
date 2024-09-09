@@ -110,3 +110,105 @@ form button {
 form button:hover {
   background-color: #0056b3;
 }
+@media screen and (max-width: 767px) {
+  main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main-curso {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    background-image: url(/src/img/PngItem_9040.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    gap: 20px;
+    color: #202020;
+    padding: 20px;
+  }
+
+  .course-info,
+  .contact-area {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffffff8e;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+
+  /* Removendo consultas de mídia para manter a estrutura */
+  .course-info h2 {
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+
+  .course-info h3 {
+    margin-bottom: 8px;
+  }
+
+  .course-info p {
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .container-ul {
+    color: #000000;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  .container-ul span {
+    color: #1b1b1b;
+    font-weight: 600;
+  }
+
+  .contact-area h2 {
+    margin-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form label {
+    margin-bottom: 5px;
+  }
+
+  form input,
+  form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  form button {
+    padding: 10px;
+    background-color: #0c97e7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #0056b3;
+  }
+}

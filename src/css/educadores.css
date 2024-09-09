@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+}
+.container-top-educador {
+  width: 100%;
+  height: 85vh;
+  background-image: url(/src/img/people-working-their-office.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(246, 247, 251);
+  box-shadow: rgba(0, 0, 0, 0.322) 0px 3px 6px, rgba(0, 0, 0, 0.541) 0px 3px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-top-educador::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 85vh;
+  background-image: url(/src/img/people-working-their-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px) brightness(0.6);
+  z-index: 1;
+  opacity: 0.2;
+}
+
+#search-bar {
+  width: 50%;
+  height: auto;
+}
+
+.educador-top-tet {
+  width: 95%;
+  font-size: 40px;
+
+  text-align: start;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  z-index: 10000;
+  /* background-color: aquamarine; */
+
+  display: flex;
+  align-items: center;
+}
+
+.container-educador {
+  width: 100%;
+  height: 85%;
+  margin-bottom: 15%;
+  /* background-color: blueviolet; */
+}
+
+.bottom-educador {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  /* background-color: green; */
+}
+
+.title-educador {
+  width: 100%;
+  height: 70px;
+
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  /* background-color: blue; */
+}
+
+.box-btn-educador {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
+  margin: 25px auto;
+  /* background-color: pink; */
+}
+
+.btn-educador {
+  width: 150px;
+  height: 100px;
+  /* background-color: #ffffff; */
+}
+
+.img-est {
+  width: 65px;
+  margin: auto;
+  /* background-color: red; */
+}
+
+.text-est {
+  width: 100%;
+  color: #333;
+  font-weight: 550;
+  margin-top: 5px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.img-est img {
+  width: 65px;
+  margin: auto;
+}

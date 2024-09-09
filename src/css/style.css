@@ -388,7 +388,9 @@ footer {
   text-align: center;
   /* background-color: greenyellow; */
 }
-
+/*  */
+/*  */
+/*  */
 .container-cards {
   width: 90%;
   height: 60%;
@@ -513,11 +515,11 @@ footer {
 #next-btn {
   width: 100px;
   height: 30px;
-  font-size: 24px;
+  font-size: 25px;
   border-radius: 25px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  text-align: center;
+  text-align: center !important;
   cursor: pointer;
   background-color: #ffffff;
   border: solid 1.5px #4fbbbc;
@@ -655,7 +657,7 @@ footer {
 }
 
 .title-estutant {
-  width: 50%;
+  width: 100%;
   height: 70px;
 
   margin: auto;
@@ -904,7 +906,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   /* comentarios  */
   .comentarios {
     height: 50vh;
@@ -912,5 +914,77 @@ body::-webkit-scrollbar-thumb {
 
   .coment-titulo {
     font-size: 16px;
+  }
+  .paragraph-bg {
+    text-align: justify;
+  }
+
+  #card3 {
+    display: none;
+  }
+  #card2 {
+    display: none;
+  }
+
+  .projects-container {
+    height: 100vh;
+  }
+  .cards-projects {
+    height: 600px;
+  }
+  .bg-row {
+    flex-direction: column;
+  }
+
+  .card-row,
+  .card-row2 {
+    width: 90%; /* Reduzir largura dos cards */
+    border-right: none; /* Remover borda lateral para celular */
+    margin: 10px 0; /* Ajustar margem para celular */
+  }
+
+  .container-lt {
+    width: 100%;
+    height: auto; /*55*/
+    background-color: #43dcdf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-Entryforms {
+    width: 100%;
+    height: auto; /* Ajuste para permitir que a altura se adapte ao conteúdo */
+    background-color: #ececec;
+    padding: 20px 0;
+  }
+  .container-cards {
+    flex-direction: column; /* Alinha os cards em coluna em telas pequenas */
+  }
+
+  .card-forms {
+    width: 90%; /* Ajuste da largura dos cards para se adaptarem ao tamanho da tela */
+    margin: 15px auto; /* Centraliza os cards em telas menores */
+  }
+
+  .title-forms {
+    width: 100%; /* Expande o título para preencher mais a tela */
+  }
+
+  .text-bottom-card {
+    width: 80%; /* Ajuste para telas menores */
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .text-bottom-card spam {
+    font-weight: bold; /* Destaque para as palavras chave */
+  }
+  footer ul {
+    flex-direction: column; /* Coloca as âncoras em colunas */
+  }
+
+  footer ul li {
+    margin: 5px 0; /* Ajusta o espaçamento entre as âncoras */
   }
 }
